@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+                function getAttributeValue(){
+                        var h2Ref= document.getElementById('hId')
+                         var attributeValue =h2Ref.getAttribute('name') 
+                         alert(attributeValue) 
+                         h2Ref.setAttribute('name','name2')
+                         var attributeValue1 =h2Ref.getAttribute('name') 
+
+                         h2Ref.removeAttribute('name')
+                        
+                         alert(attributeValue1)
+
+                        
+                }
+
+    </script>
+</head>
+<body>
+      <h2 id="hId" name="h2name" style="color:red">Welcome to Javascript</h2>
+      <button onclick="getAttributeValue()">Click Me</button>
+</body>
+</html>

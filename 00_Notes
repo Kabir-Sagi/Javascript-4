@@ -1,0 +1,135 @@
+Object is a Data Structire which is used to store the Data.It contains the collection of Properties
+Properties can be represented in the key and value pair.
+syntax :
+    var information = {
+        name:"Zoya",
+        email:"Sagar@gmail.com",
+        phone:9999999999,
+       
+
+    }
+
+    Read the Properties
+    -------------------
+       information.email
+
+       Event:
+       -------
+       How to access the html elements inside JS
+
+       document object will contain one pre-defined method  or function i.e.
+         var inputRef1= document.getElementById('textinput') ; // It gives the reference of that elements
+           var inputVal1 = inputRef1.value
+
+           Operators
+           ----------
+           1)Arthimatic 
+           2)Comparision
+           3)Logical Operators
+           4)Conditional Operators or Terinary
+
+           Arthimatic Operators : + , - ,* , /,%
+           Comparision :  >  <  >=  <= ==  !=(not equal) 
+           Logical : And(&&) OR (||) !(Logical Not)
+
+
+           function fn() {
+          -----------
+          ----------
+          -------------
+            condition 
+            ------------               consition  -  set of lines code 
+                                                     another set of lines code
+            -----------
+            -----------
+
+
+           }
+
+           1) if else statement  //example 
+           2) while
+           3)do while
+  -----------------------------------------------------------
+           4)switch
+           5) for
+
+
+          1) setAttribute(key,value) : if we want set new attribute to html element or if we want to   
+                                       update the value of Attribute.
+
+          2) getAttribute(key) : if you want access the value of attribute 
+
+          3)removeAttribute(key) : to remove the attribute dynamically.
+
+          Arrays : Array is a DS which is used to store the data
+          -----
+             syntax :
+                var array1 = ["Sagar","Verma","Ajay","Zoya","Sagar"]
+                 index will start from 0 and so on.
+
+                 Array Methods
+                 -------------
+                 1. push()
+                 2. pop()
+                 3. shift()
+                 4. unshift()
+                 5. length
+                 6. filter
+                 7. forEach()
+
+                 
+                 1)some
+                 2)every
+                 3)findIndex
+                 4)findlastIndex  
+                 5)include --->  [99,888,838,92389,0]  ---> true --->false
+
+                 1)map
+                 2)slice
+                 3)splice
+                 4)reduce
+
+
+                 setTimeOut and setInterval()
+                 setTimeOut(function(){             setInterval(function(){
+                                                               ------
+                                                                -------
+                                                                --
+                                                             },2000)
+                    ----
+                    -----
+                    ----------
+                 },3000)
+                 5lpa 6 month - react 
+                 1-2 years - apply-
+
+                 clearInterval(interval1)
+                 clearTimeOut(<Reference>)
+
+                 ----------------------------------
+
+                 storage :
+                  1)local storage
+                  2)Session storage  ---  5 
+                  3)Cookies - Explore
+
+                  how to set the data in local and session sstorage
+                  how to update 
+                  how to read or access 
+                  how to delete 
+                   
+             Get or Access the data  =  localStroage.getItem(<key>)
+                               sessionStorage.getItem(<key>)
+
+             set Data =     localStorage.setItem('name','Sagar')
+                            sessionStorage.setItem('name','Sagi')
+
+             update   =    localStorage.setItem('name','Kabir')
+
+              remove   =            localStorage.removeItem('key')
+                           sessionStorage.removeItem('key)
+
+                              clear()
+                            
+
+                

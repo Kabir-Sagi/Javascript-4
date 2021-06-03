@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //Set data from Session Storage
+        function fnSetData() {
+           var name="Kabir"
+           var city="Hyderabad"
+           var email="Kabir@gmail.com"
+           var phone=999999999
+
+           sessionStorage.setItem('pname',name)
+           sessionStorage.setItem('pcity',city)
+           sessionStorage.setItem('pemail',email)
+           sessionStorage.setItem('pphone',phone)
+           alert("Data is Stored in Session Storage")
+        }
+
+           //Get data from Session Storage
+            function fnGetData(){
+                var pnameRef = document.getElementById('pname')
+                var pcityRef = document.getElementById('pcity')
+                var pemailRef = document.getElementById('pemail')
+                var pphoneRef = document.getElementById('pphone')
+           
+                 var pnameVal = sessionStorage.getItem('pname')
+                 var pcityVal = sessionStorage.getItem('pcity')
+                 var pemailVal = sessionStorage.getItem('pemail')
+                 var pphoneVal  = sessionStorage.getItem('pphone')
+                  
+                  pnameRef.innerText = pnameVal
+                  pcityRef.innerText = pcityVal 
+                  pemailRef.innerText = pemailVal 
+                  pphoneRef.innerText = pphoneVal
+
+               
+            }
+
+              // Remove the data from Session Storage
+
+              function fnRemoveData() {
+                    sessionStorage.removeItem('pemail')
+                    sessionStorage.removeItem('pphone')
+
+              }
+               //Clear data from Session Storage
+               function fnClear() {
+                    sessionStorage.clear()
+               }
+    </script>
+</head>
+<body>
+     <div style="text-align: center;margin-top: 100px;">
+         <h2>Session Storage</h2>
+         <div>
+             <button onclick="fnSetData()">Set Data</button>
+             <button onclick="fnGetData()">Get Data</button>
+             <button onclick="fnRemoveData()">Remove Data</button>
+             <button onclick="fnClear()">Clear Data</button>
+         </div>
+         <div>
+             <p id="pname"></p>
+             <p id="pcity"></p>
+             <p id="pemail"></p>
+             <p id="pphone"></p>
+         </div>
+     </div>
+</body>
+</html>

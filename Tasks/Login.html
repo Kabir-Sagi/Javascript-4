@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+   
+    <title>Login Page</title>
+    <script>
+            
+              function  f1() {
+                  console.log(document)
+                  // Get the References of HTML Elements
+                     var inputRef1 = document.getElementById('textinput')
+                      var inputRef2=  document.getElementById('textpassword')
+                     var pRef1 = document.getElementById("p1")
+                     var pRef2 = document.getElementById("p2")
+
+
+                     //Get the Values from Text Box
+                   var inputVal1 =   inputRef1.value
+                   var inputVal2 =    inputRef2.value
+                 
+                   //Append the Values inside p Elemet
+                     pRef1.innerText =inputVal1
+                     pRef2.innerText = inputVal2
+
+                     //Make input Elements empty
+                     inputRef1.value = ""
+                     inputRef2.value= ""
+                       
+                //    alert(inputVal1) 
+                //    alert(inputVal2)
+              }  
+    </script>
+</head>
+<body>
+      <div style="text-align: center;">
+          <p>
+              <input type="text" placeholder="Enter Name" id="textinput" />
+          </p>
+          <p>
+            <input type="password" placeholder="Enter Password" id="textpassword" />
+        </p>
+        <Button onclick="f1()">Click Me</Button>
+        <div style="text-align: center;">
+              <p id="p1"></p> 
+              <p id="p2"></p>
+        </div>
+      </div>
+</body>
+</html>
